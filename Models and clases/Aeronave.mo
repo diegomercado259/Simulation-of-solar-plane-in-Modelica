@@ -6,13 +6,13 @@ class Aeronave
   parameter SI.Length b = 72.3 "Envergadura (Referencia solar impulse)";
   parameter SI.Area S = 270 "Superficie alar (se asume igual a la de celdas)";
   parameter Real CD0 = 0.012 "Resistencia parásita";
-  parameter Real e = 0.9 "Factor de Oswald";
-  parameter Real CL_max = 1.5 "CL máximo";
   parameter Real CL_ref = 0.8 "CL de vuelo: define la velocidad de rotación y de ascenso";
-  parameter Real CL_ground = 0.3 "CL durante la rodadura";
-  parameter Real mu = 0.03 "Coeficiente de rodadura";
-  parameter Real Kg(unit = "rad/(m/s)") = 0.1 "Ganancia velocidad -> ángulo de trayectoria";
-  parameter Real gamma_max(unit = "rad") = 0.2 "Ángulo de trayectoria máximo";
+  constant Real e = 0.9 "Factor de Oswald";
+  constant Real CL_max = 1.5 "CL máximo";
+  constant Real CL_ground = 0.3 "CL durante la rodadura";
+  constant Real mu = 0.03 "Coeficiente de rodadura";
+  constant Real Kg(unit = "rad/(m/s)") = 0.1 "Ganancia velocidad -> ángulo de trayectoria";
+  constant Real gamma_max(unit = "rad") = 0.2 "Ángulo de trayectoria máximo";
   final parameter SI.Force W = m * g_n "Peso";
   final parameter Real k = 1 / (pi * e * b ^ 2 / S) "Factor de resistencia inducida";
 
