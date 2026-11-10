@@ -5,7 +5,7 @@ model Avion_solar "Despegue, ascenso y crucero y ciclo día/noche de un avión s
   parameter SI.Height h_cruise = 8500 "Altitud de crucero";
   parameter SI.Height h_cruise_night = 1500 "Altitud de crucero nocturna";
   // Acoplamiento de la masa con el tamaño de paneles y batería
-  parameter SI.Mass m_ref = 5680 "Masa de referencia con 270 m2 de paneles y 164 kWh";
+  parameter SI.Mass m_ref = 2300 "Masa de referencia con 270 m2 de paneles y 164 kWh";
   parameter SI.Area A_ref = 270 "Área de paneles de referencia";
   parameter Real E_ref_kWh = 164 "Capacidad de batería de referencia";
   parameter Real arealMass(unit = "kg/m2") = 0.8 "Masa añadida por m2 de panel (celdas, encapsulado, estructura)";
